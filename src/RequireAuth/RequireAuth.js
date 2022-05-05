@@ -1,7 +1,6 @@
 import React from 'react';
-import './Blogs.css';
 
-const Blogs = () => {
+const RequireAuth = () => {
     return (
         <div>
             
@@ -9,4 +8,4 @@ const Blogs = () => {
     );
 };
 
-export default Blogs;
+export default RequireAuth;

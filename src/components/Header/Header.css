@@ -1,0 +1,40 @@
+/* 
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+nav a:hover{
+    color: orange;
+} */
+
+.nav-container{
+    /* display:flex;
+    justify-content:space-between;
+    align-items:center; */
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+  }
+  
+  
+  .link {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    transition: color ease-in-out 300ms;
+    color: red;
+  }
+  .active-link {
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 20px;
+      transition: color ease-in-out 300ms;
+      color: darkgray;
+    }
