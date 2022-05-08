@@ -29,11 +29,11 @@ function App() {
          <Checkout></Checkout>
        </RequireAuth>}></Route>
 
-       {/* <Route path="/addservice" element={
+       <Route path="/addservice" element={
           <RequireAuth>
             <AddService></AddService>
           </RequireAuth>
-        }></Route> */}
+        }></Route>
 
        <Route path='*' element={<Notfound></Notfound>}></Route>
      </Routes>
