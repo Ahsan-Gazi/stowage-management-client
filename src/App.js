@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
+import ManageServices from './components/ManageServices/ManageServices';
 import Notfound from './components/Notfound/Notfound';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import Signup from './components/Signup/Signup';
@@ -32,6 +33,11 @@ function App() {
        <Route path="/addservice" element={
           <RequireAuth>
             <AddService></AddService>
+          </RequireAuth>
+        }></Route>
+        <Route path="/manage" element={
+          <RequireAuth>
+            <ManageServices></ManageServices>
           </RequireAuth>
         }></Route>
 
