@@ -3,7 +3,7 @@ import './Blogs.css';
 
 const Blogs = () => {
     return (
-        <div className='card'>
+        <div className='mainDiv'>
             <div className='questionAndAnswer'>
                 <h3> Difference between `javascript` and `nodejs</h3>
                 <p><br />Node.js is a cross-platform, open-source
