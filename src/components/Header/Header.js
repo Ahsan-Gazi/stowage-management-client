@@ -39,6 +39,15 @@ const Header = () => {
           Add Service
         </NavLink>
 
+        {/* <NavLink
+          className={({ isActive }) => (isActive ? "active-link" : "link")}
+          to="/updateService"
+        >
+          Update Service
+        </NavLink> */}
+
+        
+
         <NavLink
           className={({ isActive }) => (isActive ? "active-link" : "link")}
           to="/manage"

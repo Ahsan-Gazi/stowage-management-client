@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+# Service provider
+## Live web site link [https://stowage-management.netlify.app/)]
+(https://stowage-management.netlify.app/).
+
+* Added Mongo DB for keeping data
+* Added authentication using firebase
+* Added NodeJs for server side to connect mongo db with react for client side
+* Added login, singup and logout button 
+* Added protected route for checkout page,addservice and manage page
+* Added 3 questions and answers in blogs page
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

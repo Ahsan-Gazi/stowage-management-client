@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useServices  from '../hooks/useServices';
 
 const ManageServices = () => {
@@ -24,6 +25,7 @@ const ManageServices = () => {
             <h2>Manage your services</h2>
             {
                 services.map(service => <div key={service._id}>
+                     <Link to={`/updateService/${service._id}`}><button>Update</button></Link>
                     <h5>{service.name} <button onClick={() => handleDelete(service._id)}>Delete</button></h5>
                     
                 </div>)

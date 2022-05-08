@@ -13,6 +13,7 @@ import ManageServices from './components/ManageServices/ManageServices';
 import Notfound from './components/Notfound/Notfound';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import Signup from './components/Signup/Signup';
+import UpdateService from './components/UpdateService/UpdateService';
 import RequireAuth from './RequireAuth/RequireAuth';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
        <Route path='/login' element={<Login></Login>}></Route>
        <Route path='/signup' element={<Signup></Signup>}></Route>
        <Route path='/about' element={<About></About>}></Route>
+       <Route path='/updateService/:id' element={<UpdateService></UpdateService>}></Route>
        <Route path='/checkout' element={<RequireAuth>
          <Checkout></Checkout>
        </RequireAuth>}></Route>
