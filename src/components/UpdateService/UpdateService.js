@@ -5,7 +5,7 @@ const UpdateService = () => {
     const {id} = useParams();
     const [user, setUser] = useState({});
     useEffect( () =>{
-        const url = `http://localhost:5000/service/${id}`;
+        const url = `https://powerful-shore-67258.herokuapp.com/service/${id}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setUser(data));
@@ -20,7 +20,7 @@ const UpdateService = () => {
         const updatedUser = {name, description,price};
 
         // send data to the server
-        const url = `http://localhost:5000/service/${id}`;
+        const url = `https://powerful-shore-67258.herokuapp.com/service/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

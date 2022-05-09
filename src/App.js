@@ -7,7 +7,8 @@ import Blogs from './components/Blogs/Blogs';
 import Checkout from './components/Checkout/Checkout';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import Home from './components/Home/Home';
+import Home from './components/Home/Home/Home';
+
 import Login from './components/Login/Login';
 import ManageServices from './components/ManageServices/ManageServices';
 import Notfound from './components/Notfound/Notfound';

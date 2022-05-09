@@ -1,15 +1,15 @@
 
 
-
-
-import React, { useEffect, useState } from 'react';
+import { sendPasswordResetEmail } from 'firebase/auth';
+import React, { useEffect, useRef, useState } from 'react';
 import {useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import './Login.css';
 
 const Login = () => {
-
+    const emailRef = useRef('');
     const [userInfo,setUserInfo]=useState({
         
         email:'',
@@ -47,10 +47,24 @@ const Login = () => {
     const navigate = useNavigate();
   let location = useLocation();
   let from = location.state?.from?.pathname || "/";
+
+  
   useEffect(() => {
     if (user || googleUser) {
       navigate(from, { replace: true });
     }},[user,googleUser])
+
+
+    const resetPassword = async () => {
+        const email = emailRef.current.value;
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+        else{
+            toast('please enter your email address');
+        }
+    }
 
     return (
         <div>
@@ -71,6 +85,7 @@ const Login = () => {
                 <button type="submit" className="btn btn-primary">Login</button>
             </form> 
             <button onClick={()=>signInWithGoogle()}>Google Signin</button>
+            <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
         </div>
     );
 };
