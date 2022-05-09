@@ -1,16 +1,3 @@
-// import React from 'react';
-// import './Service.css';
-
-// const Service = () => {
-//     return (
-//         <div>
-            
-//         </div>
-//     );
-// };
-
-// export default Service;
-
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
