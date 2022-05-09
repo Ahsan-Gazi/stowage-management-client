@@ -1,6 +1,6 @@
 # Service provider
-# Live web site link [https://stowage-management.netlify.app/)]
-(https://stowage-management.netlify.app/).
+# Live web site link [https://assignment11-4f59e.web.app/)]
+(https://assignment11-4f59e.web.app/).
 
 * Added Mongo DB for keeping data
 * Added authentication using firebase
